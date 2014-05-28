@@ -12,3 +12,13 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_quitBtn_clicked()
+{
+    this->close();
+}
+
+void MainWindow::on_matchBtn_clicked()
+{
+    this->findChild<QTextEdit *>("mainText")->clear();
+}

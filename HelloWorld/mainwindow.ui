@@ -6,25 +6,54 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>483</width>
-    <height>393</height>
+    <width>498</width>
+    <height>502</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>30</y>
-      <width>91</width>
-      <height>16</height>
+      <x>39</x>
+      <y>10</y>
+      <width>411</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="matchBtn">
+         <property name="text">
+          <string>匹配</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="mainText"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="quitBtn">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>400</y>
+      <width>114</width>
+      <height>32</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hello world!</string>
+     <string>退出</string>
     </property>
    </widget>
   </widget>
@@ -33,7 +62,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>483</width>
+     <width>498</width>
      <height>22</height>
     </rect>
    </property>
